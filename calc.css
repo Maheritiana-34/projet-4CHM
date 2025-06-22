@@ -1,16 +1,14 @@
 body {
   background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: auto;
 }
 
-.h1{
-    position: relative;
-  top: -250px;
-  left: 10%;
+.h1 {
+  position: relative;
+  top: -50px;
+  left: 2%;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -22,33 +20,34 @@ body {
   animation: mane 10s linear infinite;
 }
 
-@keyframes mane{
-  0%{
-     box-shadow:
+@keyframes mane {
+  0% {
+    box-shadow:
       0 0 10px 5px blue,
       0 0 10px 5px red;
     background-position: 0% center;
   }
-  100%{
+
+  100% {
     background-position: 200% center;
   }
 }
 
-.p{
+.p {
   position: relative;
-  left: 10%;
+  left: 2%;
+  top: 150px;
 }
 
 .calculator {
   position: relative;
-  top: 40px;
-  right: 25%;
-  background:  darkslategrey;
+  left: 20%;
+  background: darkslategrey;
   padding: 20px;
   border-radius: 12px;
   width: 250px;
-   box-shadow: 0 0 10px 5px blue,
-               0 0 10px 5px green;
+  box-shadow: 0 0 10px 5px blue,
+              0 0 10px 5px green;
 }
 
 #display {
@@ -74,11 +73,33 @@ button {
   font-size: 18px;
   border: none;
   border-radius: 8px;
-  background-color:  #e0e0e0;
+  background-color: #e0e0e0;
   cursor: pointer;
   transition: background 0.2s ease;
 }
 
 button:hover {
   background-color: blue;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+footer .social {
+  margin-top: 10px;
+}
+
+footer .social a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+footer .social a:hover {
+  color: #005099;
 }
