@@ -45,7 +45,7 @@ body {
   background: darkslategrey;
   padding: 20px;
   border-radius: 12px;
-  width: 250px;
+  width: 270px;
   box-shadow: 0 0 10px 5px blue,
               0 0 10px 5px green;
 }
@@ -97,9 +97,26 @@ footer .social a {
   margin: 0 10px;
   text-decoration: none;
   color: #0077cc;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 footer .social a:hover {
   color: #005099;
+}
+
+@media screen and (max-width: 670px){
+  .h1{
+    font-size: 16px;
+  }
+  p{
+    font-size: 18px;
+  }
+  .calculator{
+    width: 230px;
+  }
+  button{
+    position: relative;
+    left: 7%;
+    font-size: 14px;
+  } 
 }
